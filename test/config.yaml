@@ -1,0 +1,7 @@
+TelegramConfig    :
+  BotToken        : '6697911499:AAEtb1YHaM-pPgyJi3cSDQFEIrhL87n9Nfs'
+
+MqttConfig        :
+  Broker          : 'localhost:1883'
+  User            : 'test'
+  Password        : '000000'
