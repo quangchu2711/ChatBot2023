@@ -183,7 +183,7 @@ func telegramBotBegin(bot_token string) (tgbotapi.UpdatesChannel, *tgbotapi.BotA
 }
 
 func yamlFileHandle() {
-    yfile, err1 := ioutil.ReadFile("config.yaml")
+    yfile, err1 := ioutil.ReadFile("tel_config.yaml")
 
     if err1 != nil {
 

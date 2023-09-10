@@ -1,8 +1,9 @@
 TelegramConfig    :
   BotName                 : 'Quang_bot'
-  BotToken                : '5379690042:AAHsmvcazskbA3zmC6IyINMp8k0rezViCGk'
   # BotToken              : '5765659274:AAF1MrBZwC52uunp-t2CE6KhQn2yEmvKaik'
-  DeviceControlGroupID    : -1001625126544
+  # DeviceControlGroupID    : -1001625126544
+  BotToken        : '6697911499:AAEtb1YHaM-pPgyJi3cSDQFEIrhL87n9Nfs'
+  DeviceControlGroupID    : -4059748462
 
 MqttConfig        :
   # Broker          : 'ptitteam:1883'

@@ -128,7 +128,7 @@ var messageLedDevicePubHandler mqtt.MessageHandler = func(client mqtt.Client, ms
 
 var messageSensorDevicePubHandler mqtt.MessageHandler = func(client mqtt.Client, msg mqtt.Message) {
     deviceMsg := string(msg.Payload())
-    fmt.Printf("Received message: %s from topic: %s\n", deviceMsg, msg.Topic())
+    fmt.Printf("\nReceived message: %s from topic: %s\n", deviceMsg, msg.Topic())
     deviceID, err := getDeviceIDFormSensorTopic(msg.Topic())
     if err == nil {
         var humidityValue map[string]float64
@@ -515,7 +515,7 @@ func updateDeviceSensorData(deviceID string, valueSensor Sensor) {
 }
 
 func yamlFileHandle() {
-    yfile, _ := ioutil.ReadFile("config.yaml")
+    yfile, _ := ioutil.ReadFile("bot_config.yaml")
     yaml.Unmarshal(yfile, &cfg)
 }
 
